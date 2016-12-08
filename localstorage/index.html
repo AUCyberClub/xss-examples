@@ -1,0 +1,17 @@
+<head>
+    <script>
+        if (!localStorage.score) {
+            localStorage.score = 50;
+        }
+        window.onload = function() {
+            document.getElementById("score").innerHTML = localStorage.score;
+        }
+    </script>
+</head>
+
+<body>
+    <big><b>Your score is:</b> <span id="score"></span></big>
+    <br>
+    <hr>
+    <a href="">Refresh</a>
+</body>
